@@ -4,3 +4,87 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+body{
+  font-family: 'Inter', sans-serif;
+  background: #0f172a;
+  color: #FAFBF9;
+  line-height: 1.6;
+}
+
+.header{
+  position: sticky;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.container-nav{
+  display: flex;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: space-between; 
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links{
+  text-decoration: none;
+  color: #FAFBF9;
+  margin: 0 15px;
+  position: relative;
+}
+
+.signUpIn a{
+  text-decoration: none;
+  color: #FAFBF9;
+  margin: 0 15px;
+  padding: 5px;
+}
+
+.signUp-btn{
+  padding: 10px 20px;
+  background-color: #4282cc;
+  outline: none;
+  border: none;
+  color: #FAFBF9;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #75a5dd;
+  text-decoration: none;
+}
+
+.nav-links::after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 0;
+  height: 2.5px;
+  background-color: #75a5dd;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-links:hover::after{
+  width: 100%;
+}
+
+.nav-links:hover{
+  color: #75a5dd;
+}
+
+.signUp-btn:hover{
+  background-color: #1875e0;
+}
