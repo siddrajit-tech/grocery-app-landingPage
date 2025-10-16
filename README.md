@@ -1,4 +1,6 @@
 # Grocery App Landing Page
+
+## Introduction
 A modern landing page for a grocery app from which users can buy groceries and ammenities with immersive and smooth experience. It has no functionality and is only a static web page.
 
 ## Tech Stack
