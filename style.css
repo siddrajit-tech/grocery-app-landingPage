@@ -16,13 +16,16 @@ body{
   position: sticky;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 15px 0;
+  top: 0;  
+  z-index: 1000;  
+  background: #0f172a;  
 }
 
 .container-nav{
   display: flex;
   padding: 0 20px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
   justify-content: space-between; 
 }
 
@@ -90,20 +93,24 @@ body{
 }
 
 .hero{
-  min-width: 85vh;
-  height: 100vh;
+  min-height: 85vh;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 80px 50px;
-  max-width: 1200px;
+  max-width: 1400px;
   gap: 55px;
   align-items: center;
 }
 
+.hero-img {
+  flex: 1;
+  max-width: 650px;
+}
+
 .hero-img img{
-  width: 500px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 650px;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
@@ -150,27 +157,27 @@ body{
   border-radius: 12px;
   cursor: pointer;
   margin: 0;
+  transition: all 0.3s ease;
 }
 
-.hero-text button:first-of-type {
+.hero-btn button:first-of-type {
   background: linear-gradient(135deg, #4282cc, #1875e0);
   color: #FAFBF9;
   box-shadow: 0 4px 15px rgba(66, 130, 204, 0.4);
 }
 
-.hero-text button:first-of-type:hover {
+.hero-btn button:first-of-type:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 15px rgba(66, 130, 204, 0.4);
 }
 
-.hero-text button:last-of-type {
+.hero-btn button:last-of-type {
   background: transparent;
   color: #FAFBF9;
   border: 2px solid #4282cc;
 }
 
-.hero-text button:last-of-type:hover {
+.hero-btn button:last-of-type:hover {
   background: rgba(66, 130, 204, 0.1);
   transform: translateY(-3px);
 }
-
